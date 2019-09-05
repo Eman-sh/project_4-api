@@ -1,0 +1,87 @@
+<%= form_with(model: console, local: true) do |form| %>
+  <% if console.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(console.errors.count, "error") %> prohibited this console from being saved:</h2>
+
+      <ul>
+      <% console.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :img1 %>
+    <%= form.text_field :img1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :img2 %>
+    <%= form.text_field :img2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :img3 %>
+    <%= form.text_field :img3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :img4 %>
+    <%= form.text_field :img4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :video1 %>
+    <%= form.text_field :video1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :video2 %>
+    <%= form.text_field :video2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :platform %>
+    <%= form.text_field :platform %>
+  </div>
+
+  <div class="field">
+    <%= form.label :emu %>
+    <%= form.text_field :emu %>
+  </div>
+
+  <div class="field">
+    <%= form.label :system %>
+    <%= form.text_field :system %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :buy %>
+    <%= form.text_field :buy %>
+  </div>
+
+  <div class="field">
+    <%= form.label :about %>
+    <%= form.text_field :about %>
+  </div>
+
+  <div class="field">
+    <%= form.label :info %>
+    <%= form.text_field :info %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

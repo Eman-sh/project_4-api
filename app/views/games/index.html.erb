@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Games</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Img1</th>
+      <th>Img2</th>
+      <th>Img3</th>
+      <th>Img4</th>
+      <th>Video1</th>
+      <th>Video2</th>
+      <th>Aboutgame</th>
+      <th>Platform</th>
+      <th>Genre</th>
+      <th>Hitnt</th>
+      <th>Try</th>
+      <th>Buy</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @games.each do |game| %>
+      <tr>
+        <td><%= game.title %></td>
+        <td><%= game.img1 %></td>
+        <td><%= game.img2 %></td>
+        <td><%= game.img3 %></td>
+        <td><%= game.img4 %></td>
+        <td><%= game.video1 %></td>
+        <td><%= game.video2 %></td>
+        <td><%= game.aboutgame %></td>
+        <td><%= game.platform %></td>
+        <td><%= game.genre %></td>
+        <td><%= game.hitnt %></td>
+        <td><%= game.try %></td>
+        <td><%= game.buy %></td>
+        <td><%= link_to 'Show', game %></td>
+        <td><%= link_to 'Edit', edit_game_path(game) %></td>
+        <td><%= link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Game', new_game_path %>

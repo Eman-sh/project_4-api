@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  img1: MyString
+  img2: MyString
+  img3: MyString
+  img4: MyString
+  video1: MyString
+  video2: MyString
+  aboutgame: MyString
+  platform: MyString
+  genre: MyString
+  hitnt: MyString
+  try: MyString
+  buy: MyString
+
+two:
+  title: MyString
+  img1: MyString
+  img2: MyString
+  img3: MyString
+  img4: MyString
+  video1: MyString
+  video2: MyString
+  aboutgame: MyString
+  platform: MyString
+  genre: MyString
+  hitnt: MyString
+  try: MyString
+  buy: MyString

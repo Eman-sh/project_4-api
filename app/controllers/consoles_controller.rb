@@ -1,5 +1,6 @@
 class ConsolesController < ApplicationController
   before_action :set_console, only: [:show, :edit, :update, :destroy]
+  skip_before_action :verify_authenticity_token
 
   # GET /consoles
   # GET /consoles.json
